@@ -14,3 +14,32 @@ update()-Updates the dictionary with the specified key-value pairs
 get()-Returns the value of the specified key
 setdefault()-Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
 """
+
+car = {"brand": "Ford", "model": "Mustang", "year": 1964}
+x = car.keys()
+y = car.values()
+z = car.items()
+a = dict.fromkeys(x,1)
+car["color"] = "pink"
+# print(x)
+# print(y)
+# print(z)
+print(a)
+
+car = {"brand": "Ford", "model": "Mustang", "year": 1964}
+print(car.pop("model"))
+print(car)
+print(car.popitem())
+print(car)
+
+car = {"brand": "Ford", "model": "Mustang", "year": 1964}
+car.update({"color": "White"})
+print(car)
+
+car = {"brand": "Ford", "model": "Mustang", "year": 1964}
+x = car.get("model","ash")
+print(x)
+
+car = {"brand": "Ford", "model": "Mustang", "year": 1964}
+x = car.setdefault("del","ash")
+print(car)
