@@ -16,5 +16,45 @@ sort()-Sorts the list
 
 """
 
-l1 = [1, 2, 3]
-print(l1.clear())
+makeup = [1, 2, 4, (1, 2), 7, 7]
+x = makeup.index(7)
+print(x)
+
+students = ["a", "b", "c", "d", "a"]
+print(students.count("a"))
+
+animals = ["cat", 'dog']
+animals.append(("cow", "hen"))
+print(animals)
+
+country = ["India", "Australia"]
+country.insert(0, "USA")
+print(country)
+
+vegetables = ["onion", "chillies"]
+vegetables.extend((1, 2, 3))
+print(vegetables)
+
+city = ["mumbai", "nagpur"]
+city.clear()
+print(city)
+
+city = ["mumbai", "nagpur"]
+city.remove("nagpur")
+print(city)
+
+city = ["mumbai", "nagpur"]
+x = city.pop()
+print(x, city)
+
+vegetables = ["onion", "chillies"]
+x = vegetables.copy()
+print(x, id(vegetables), id(x))
+
+vegetables = ["onion", "chillies"]
+vegetables.reverse()
+print(vegetables)
+
+makeup = [1, 10, 55, 2, 4, 7, 7]
+makeup.sort(reverse=True)
+print(makeup)
